@@ -104,10 +104,9 @@ nav {
 
 .paragraph-news {
     color: #8F8B9A;
-    font-weight:500;
+    font-weight: 500;
     font-size: 1.5rem;
     width: 400px;
-    
 }
 
 .button-news {
@@ -121,4 +120,167 @@ nav {
     height: 40px
 }
 
+/* CONTACT */
 
+#contact h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-div {
+    width: 30%;
+}
+
+
+
+
+#contact form div input {
+    background-color: #F7F7F7;
+    border: none;
+    border-radius: 10px;
+    color: gray;
+    padding: 10px;
+    font-size: 1rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    width: 46%;
+}
+    
+#contact form textarea {
+    background-color: #F7F7F7;
+    border: none;
+    border-radius: 10px;
+    color: gray;
+    font-size: 1rem;
+    padding-top: 10px;
+    text-indent: 10px;
+    width: 100%;
+    height: 150px;
+}
+        
+        
+.button-contact {
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    width: 100%;
+} 
+
+/* FOOTER */
+
+#footer {
+    margin-top: 2rem;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    height: 150px;
+}
+
+.social-icon {
+    padding-right: 20px;
+}
+
+.social-icon i {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Ajustement du Hero Banner pour le mobile */
+
+
+    .hero-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-banner p {
+        width: 70%;
+    }
+
+
+    /* Section Last News */
+    .news {
+        flex-direction: column;
+        /* Les éléments sont empilés en colonne */
+        gap: 20px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+        /* Espacement entre les news */
+    }
+
+    .image-news {
+        width: 100%;
+        /* L'image s'adapte à la largeur de l'écran */
+
+        /* Réduction du rayon de bordure pour une apparence plus petite */
+    }
+
+    .news-excerpt,
+    .news-title {
+        width: 100%;
+    }
+
+    .paragraph-news {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .news-responsive {
+        flex-direction: column-reverse;
+    }
+
+   
+
+    /* Formulaire de contact */
+    .contact-div {
+        width: 80%;
+        /* Le formulaire prend presque toute la largeur */
+    }
+
+    #contact .contact-div input {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        text-indent: 10px;
+        /* Les champs de saisie prennent toute la largeur */
+    }
+
+    /* Footer */
+    #footer {
+        flex-direction: column;
+        /* Les éléments sont empilés verticalement */
+        justify-content: center;
+        height: auto;
+        /* Laisser le footer ajuster sa hauteur automatiquement */
+        padding: 20px 0;
+        /* Ajouter du padding pour espacer les éléments */
+    }
+
+    .social-icon {
+        margin-top: 20px;
+        /* Espace entre le texte et les icônes sociales */
+    }
+
+    .social-icon i {
+        padding: 10px;
+        /* Réduire l'espacement autour des icônes pour plus de compacité */
+    }
+}

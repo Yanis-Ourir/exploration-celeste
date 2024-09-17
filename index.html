@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exploration Céleste - Un site d’information sur l’astronomie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
 
@@ -26,36 +27,64 @@
     <section id="last-news">
         <div class="news">
             <img src="./assets/exoplanet.png" alt="image d'une exoplanète" class="image-news">
-            
+    
             <div class="news-excerpt">
                 <h2 class="news-title">Les secrets de la Galaxie</h2>
                 <p class="paragraph-news">
-                    Plongez dans l'exploration des galaxies lointaines et découvrez les mystères fascinants qu'elles renferment.
+                    Plongez dans l'exploration des galaxies lointaines et découvrez les mystères fascinants qu'elles
+                    renferment.
                 </p>
-                
+    
                 <button class="button-news">En savoir plus</button>
             </div>
         </div>
-            
-        <div class="news">
+    
+        <div class="news news-responsive">
             <div class="news-excerpt">
                 <h2 class="news-title">Découvrez les Merveilles de l'Univers</h2>
                 <p class="paragraph-news">
-                    De la Voie Lactée aux confins de l'univers observable, nous vous emmenons dans un voyage fascinant à travers les
+                    De la Voie Lactée aux confins de l'univers observable, nous vous emmenons dans un voyage fascinant à
+                    travers les
                     étoiles, les planètes et bien plus encore.
                 </p>
-                
+    
                 <button class="button-news">En savoir plus</button>
             </div>
-            
+    
             <img src="./assets/astronomy.jpg" alt="astronomie" class="image-news">
         </div>
     </section>
 
+    <section id="contact">
+        <h3>
+            Contact
+        </h3>
+
+        <form>
+            <div class="contact-div">
+                <input type="text" placeholder="Nom"/>
+                <input type="email" placeholder="Email"/>
+            </div>
+            <div class="contact-div">
+                <div>
+                    <textarea placeholder="Message"></textarea>
+                </div>
+                <button class="button-contact">Envoyer</button>
+            </div>
+        </form>
+
+    </section>
+
+    <footer id="footer">
+        <p>© Station109 2024</p>
+
+        <div class="social-icon">
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-square-facebook fa-xl"></i>
+        </div>
+    </footer>
 
     
-    
-
 
 </body>
 </html>

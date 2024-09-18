@@ -4,15 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie - Exploration Céleste</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <a href="index.html">
-            <img src="assets/logo.png" alt="logo du site exploration céleste">
+            <img src="assets/logo.png" alt="logo du site exploration céleste" class="logo-nav">
         </a>
-        <a href="galerie.html">Galerie</a>
-        <a>Blog</a>
+        <a href="galerie.html" class="nav-link">Galerie</a>
+        <a href="blog.html" class="nav-link">Blog</a>
     </nav>
-    <h1>Notre Galerie d'images</h1>
+
+
+    <h1>Galerie</h1>
+
+    <section id="galerie">
+        <div class="grid-image">
+            <img src="assets/galerie/milky-way.jpg" alt="image de la voie lactée" class="milky-way">
+            <img src="assets/galerie/planet.webp" alt="image d'une planète" class="planet">
+            <img src="assets/galerie/earth.webp" alt="image de la Terre" class="earth">
+            <img src="assets/galerie/exoplanet-galerie.webp" alt="image d'exoplanetès" class="exoplanet">
+            <img src="assets/galerie/stars.webp" alt="image des étoiles" class="stars">
+        </div>
+    </section>
 </body>
 </html>

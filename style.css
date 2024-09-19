@@ -25,7 +25,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: black;
+    color: rgb(228, 52, 228);
 }
 
 .paragraphe-presentation {
@@ -77,7 +77,7 @@ nav {
 }
 
 .button-start:hover {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
@@ -152,6 +152,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .contact-div {
@@ -201,7 +202,6 @@ nav {
 /* FOOTER */
 
 #footer {
-    margin-top: 2rem;
     background-color: #222222;
     color: white;
     display: flex;
@@ -221,10 +221,22 @@ nav {
 
 /* GALERIE */
 
+.title-galerie {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
 #galerie {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
 }
+
+
 
 .grid-image {
     display: grid;
@@ -232,8 +244,8 @@ nav {
     grid-row: 3;
     gap: 5px;
     padding-top: 2rem;
-    padding-bottom: 2rem;
-    width: 70%;
+    padding-bottom: 2rem; 
+    width: 60%;
 }
 
 .grid-image img {
@@ -259,17 +271,18 @@ nav {
     grid-column: 2;
     grid-row: 2;
 }
-
+    
+    
 .exoplanet {
     grid-column: 3;
     grid-row: 2;
 }
 
 .stars {
-    grid-column: 1/ span 3;
+grid-column: 1/ span 3;
     grid-row: 3;
-    height: 300px;
-}
+    height: 400px;
+}  
 
 
 
@@ -327,6 +340,10 @@ nav {
         /* Le formulaire prend presque toute la largeur */
     }
 
-
+    .grid-image {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
 }
